@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stored SMS Data</title>
+    <link rel="stylesheet" href="options.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Stored SMS Data</h1>
+        <div class="controls">
+            <input type="text" id="filterInput" placeholder="Filter by phone, service, etc...">
+            <button id="clearDataBtn">Clear All Data</button>
+        </div>
+        <table id="dataTable">
+            <thead>
+                <tr>
+                    <th>Timestamp</th>
+                    <th>Country/Title</th>
+                    <th>Phone Number</th>
+                    <th>Service</th>
+                    <th>Message</th>
+                </tr>
+            </thead>
+            <tbody id="dataBody">
+                </tbody>
+        </table>
+        <div id="noDataMessage" style="display: none; text-align: center; padding: 20px;">
+            No data has been stored yet.
+        </div>
+    </div>
+    <script src="options.js"></script>
+</body>
+</html>
